@@ -1,0 +1,241 @@
+{
+  "communities": {
+    "0": [
+      "coinjoin_corpus_wallet_abortrescan",
+      "coinjoin_corpus_wallet_caddressbookdata",
+      "coinjoin_corpus_wallet_cansupportfeature",
+      "coinjoin_corpus_wallet_ckeypool",
+      "coinjoin_corpus_wallet_getbalance",
+      "coinjoin_corpus_wallet_getchange",
+      "coinjoin_corpus_wallet_getcoinjoinprogress",
+      "coinjoin_corpus_wallet_getkeypoolsize",
+      "coinjoin_corpus_wallet_getversion",
+      "coinjoin_corpus_wallet_haveavailablecoinsforstaking",
+      "coinjoin_corpus_wallet_isabortingrescan",
+      "coinjoin_corpus_wallet_isscanning",
+      "coinjoin_corpus_wallet_loadkey",
+      "coinjoin_corpus_wallet_loadminversion",
+      "coinjoin_corpus_wallet_resetrequestcount",
+      "coinjoin_corpus_wallet_setbroadcasttransactions",
+      "coinjoin_corpus_wallet_setcoinjoinenabled",
+      "coinjoin_corpus_wallet_setcoinjoinrounds",
+      "coinjoin_corpus_wallet_stopcoinjoinmixing",
+      "wallet_h"
+    ],
+    "1": [
+      "coinjoin_corpus_coinjoinpage_coinjoinpage",
+      "coinjoin_corpus_coinjoinpage_on_denominationcombobox_currentindexchanged",
+      "coinjoin_corpus_coinjoinpage_on_enablecoinjoincheckbox_toggled",
+      "coinjoin_corpus_coinjoinpage_on_enablestakingcheckbox_toggled",
+      "coinjoin_corpus_coinjoinpage_on_mixmaxbutton_clicked",
+      "coinjoin_corpus_coinjoinpage_on_roundsspinbox_valuechanged",
+      "coinjoin_corpus_coinjoinpage_on_startmixbutton_clicked",
+      "coinjoin_corpus_coinjoinpage_on_stopmixbutton_clicked",
+      "coinjoin_corpus_coinjoinpage_setbalance",
+      "coinjoin_corpus_coinjoinpage_setclientmodel",
+      "coinjoin_corpus_coinjoinpage_setwalletmodel",
+      "coinjoin_corpus_coinjoinpage_ui",
+      "coinjoin_corpus_coinjoinpage_updatedisplayunit",
+      "coinjoin_corpus_coinjoinpage_updateprogressbars",
+      "coinjoin_corpus_coinjoinpage_updatestakinginfo",
+      "coinjoin_corpus_coinjoinpage_updatestatus",
+      "coinjoinpage_cpp",
+      "coinjoinpage_h"
+    ],
+    "2": [
+      "coinjoin_corpus_coinjoin_cancelsession",
+      "coinjoin_corpus_coinjoin_ccoinjoin",
+      "coinjoin_corpus_coinjoin_createcollateral",
+      "coinjoin_corpus_coinjoin_formatdenomination",
+      "coinjoin_corpus_coinjoin_getavailablebalance",
+      "coinjoin_corpus_coinjoin_hascollateral",
+      "coinjoin_corpus_coinjoin_joinsession",
+      "coinjoin_corpus_coinjoin_stopmixing",
+      "coinjoin_corpus_coinjoin_submitoutputs",
+      "coinjoin_corpus_coinjoin_submitsignedinput",
+      "coinjoin_cpp"
+    ],
+    "3": [
+      "coinjoin_corpus_coinjoin_automix",
+      "coinjoin_corpus_coinjoin_createcoinjointransaction",
+      "coinjoin_corpus_coinjoin_markmixed",
+      "coinjoin_corpus_coinjoin_signandbroadcast",
+      "coinjoin_corpus_wallet_ctransaction",
+      "coinjoin_corpus_wallet_cwallettx",
+      "coinjoin_corpus_wallet_init",
+      "coinjoin_corpus_wallet_txin"
+    ],
+    "4": [
+      "coinjoin_corpus_wallet_caccount",
+      "coinjoin_corpus_wallet_caccountingentry",
+      "coinjoin_corpus_wallet_readorderpos",
+      "coinjoin_corpus_wallet_setnull",
+      "coinjoin_corpus_wallet_writeorderpos"
+    ],
+    "5": [
+      "coinjoin_corpus_coinjoin_createsession",
+      "coinjoin_corpus_coinjoin_getdenominations",
+      "coinjoin_corpus_coinjoin_getstandarddenominations",
+      "coinjoin_corpus_coinjoin_isvaliddenomination",
+      "coinjoin_corpus_coinjoin_suggestdenomination"
+    ],
+    "6": [
+      "coinjoin_corpus_coinjoin_cleanupexpiredsessions",
+      "coinjoin_corpus_coinjoin_getactivesessions",
+      "coinjoin_corpus_coinjoin_init",
+      "coinjoin_corpus_coinjoin_isexpired"
+    ],
+    "7": [
+      "coinjoin_corpus_coinjoin_coinjoinsession",
+      "coinjoin_corpus_coinjoin_getsession",
+      "coinjoin_corpus_coinjoin_setconfig",
+      "coinjoin_h"
+    ],
+    "8": [
+      "coinjoin_corpus_coinjoin_getmixingprogress",
+      "coinjoin_corpus_coinjoin_getoutpointrounds",
+      "coinjoin_corpus_coinjoin_selectcoinsfordenomination"
+    ],
+    "9": [
+      "coinjoin_corpus_wallet_bindwallet",
+      "coinjoin_corpus_wallet_markdirty"
+    ]
+  },
+  "cohesion": {
+    "0": 0.1,
+    "1": 0.19,
+    "2": 0.18,
+    "3": 0.29,
+    "4": 0.4,
+    "5": 0.4,
+    "6": 0.5,
+    "7": 0.5,
+    "8": 0.67,
+    "9": 1.0
+  },
+  "gods": [
+    {
+      "id": "coinjoin_corpus_coinjoinpage_updateprogressbars",
+      "label": "updateProgressBars()",
+      "degree": 6
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_createcoinjointransaction",
+      "label": "CreateCoinJoinTransaction()",
+      "degree": 6
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_setbalance",
+      "label": "setBalance()",
+      "degree": 5
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_updatestakinginfo",
+      "label": "updateStakingInfo()",
+      "degree": 5
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_getstandarddenominations",
+      "label": "GetStandardDenominations()",
+      "degree": 5
+    },
+    {
+      "id": "coinjoin_corpus_wallet_init",
+      "label": "Init()",
+      "degree": 4
+    },
+    {
+      "id": "coinjoin_corpus_wallet_caccountingentry",
+      "label": "CAccountingEntry()",
+      "degree": 4
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_coinjoinpage",
+      "label": "CoinJoinPage()",
+      "degree": 4
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_updatestatus",
+      "label": "updateStatus()",
+      "degree": 4
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_getoutpointrounds",
+      "label": "GetOutpointRounds()",
+      "degree": 4
+    }
+  ],
+  "surprises": [
+    {
+      "source": "updateProgressBars()",
+      "target": "GetStandardDenominations()",
+      "source_files": [
+        "coinjoinpage.cpp",
+        "coinjoin.cpp"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories; bridges separate communities"
+    },
+    {
+      "source": "CreateCoinJoinTransaction()",
+      "target": "CTransaction()",
+      "source_files": [
+        "coinjoin.cpp",
+        "wallet.h"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "CreateCoinJoinTransaction()",
+      "target": "CWalletTx()",
+      "source_files": [
+        "coinjoin.cpp",
+        "wallet.h"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "GetSession()",
+      "target": "CoinJoinSession()",
+      "source_files": [
+        "coinjoin.cpp",
+        "coinjoin.h"
+      ],
+      "confidence": "INFERRED",
+      "relation": "calls",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `CreateCoinJoinTransaction()` connect `Community 3` to `Community 8`, `Community 2`?",
+      "why": "High betweenness centrality (0.484) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `GetStandardDenominations()` connect `Community 5` to `Community 1`, `Community 2`?",
+      "why": "High betweenness centrality (0.357) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `updateProgressBars()` connect `Community 1` to `Community 5`?",
+      "why": "High betweenness centrality (0.343) - this node is a cross-community bridge."
+    },
+    {
+      "type": "verify_inferred",
+      "question": "Are the 2 inferred relationships involving `CreateCoinJoinTransaction()` (e.g. with `CWalletTx()` and `CTransaction()`) actually correct?",
+      "why": "`CreateCoinJoinTransaction()` has 2 INFERRED edges - model-reasoned connections that need verification."
+    },
+    {
+      "type": "low_cohesion",
+      "question": "Should `Community 0` be split into smaller, more focused modules?",
+      "why": "Cohesion score 0.1 - nodes in this community are weakly interconnected."
+    }
+  ]
+}

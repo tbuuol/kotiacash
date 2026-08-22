@@ -1,0 +1,2191 @@
+{
+  "nodes": [
+    {
+      "id": "wallet_h",
+      "label": "wallet.h",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L1"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_ckeypool",
+      "label": "CKeyPool()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L95"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_caddressbookdata",
+      "label": "CAddressBookData()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L116"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_readorderpos",
+      "label": "ReadOrderPos()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L141"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_writeorderpos",
+      "label": "WriteOrderPos()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L152"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_ctransaction",
+      "label": "CTransaction()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L167"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_cwallettx",
+      "label": "CWalletTx()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L234"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_txin",
+      "label": "txIn()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L286"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_init",
+      "label": "Init()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L291"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_markdirty",
+      "label": "MarkDirty()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L370"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_bindwallet",
+      "label": "BindWallet()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L382"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_getchange",
+      "label": "GetChange()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L396"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_caccountingentry",
+      "label": "CAccountingEntry()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L476"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_setnull",
+      "label": "SetNull()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L674"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_cansupportfeature",
+      "label": "CanSupportFeature()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L719"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_abortrescan",
+      "label": "AbortRescan()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L745"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_isabortingrescan",
+      "label": "IsAbortingRescan()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L746"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_isscanning",
+      "label": "IsScanning()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L747"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_loadkey",
+      "label": "LoadKey()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L757"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_loadminversion",
+      "label": "LoadMinVersion()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L761"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_getbalance",
+      "label": "GetBalance()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L807"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_resetrequestcount",
+      "label": "ResetRequestCount()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L898"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_getkeypoolsize",
+      "label": "GetKeyPoolSize()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L904"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_getversion",
+      "label": "GetVersion()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L919"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_setbroadcasttransactions",
+      "label": "SetBroadcastTransactions()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L957"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_setcoinjoinenabled",
+      "label": "SetCoinJoinEnabled()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L991"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_setcoinjoinrounds",
+      "label": "SetCoinJoinRounds()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L995"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_getcoinjoinprogress",
+      "label": "GetCoinJoinProgress()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L999"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_stopcoinjoinmixing",
+      "label": "StopCoinJoinMixing()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L1009"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_haveavailablecoinsforstaking",
+      "label": "HaveAvailableCoinsForStaking()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L1060"
+    },
+    {
+      "id": "coinjoin_corpus_wallet_caccount",
+      "label": "CAccount()",
+      "file_type": "code",
+      "source_file": "wallet.h",
+      "source_location": "L1120"
+    },
+    {
+      "id": "coinjoinpage_h",
+      "label": "coinjoinpage.h",
+      "file_type": "code",
+      "source_file": "coinjoinpage.h",
+      "source_location": "L1"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_ui",
+      "label": "Ui()",
+      "file_type": "code",
+      "source_file": "coinjoinpage.h",
+      "source_location": "L16"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_coinjoinpage",
+      "label": "CoinJoinPage()",
+      "file_type": "code",
+      "source_file": "coinjoinpage.h",
+      "source_location": "L24"
+    },
+    {
+      "id": "coinjoinpage_cpp",
+      "label": "coinjoinpage.cpp",
+      "file_type": "code",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L1"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_coinjoinpage",
+      "label": "CoinJoinPage()",
+      "file_type": "code",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L20"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_setwalletmodel",
+      "label": "setWalletModel()",
+      "file_type": "code",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L55"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_setclientmodel",
+      "label": "setClientModel()",
+      "file_type": "code",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L88"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_setbalance",
+      "label": "setBalance()",
+      "file_type": "code",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L93"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_on_startmixbutton_clicked",
+      "label": "on_startMixButton_clicked()",
+      "file_type": "code",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L132"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_on_stopmixbutton_clicked",
+      "label": "on_stopMixButton_clicked()",
+      "file_type": "code",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L236"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_on_mixmaxbutton_clicked",
+      "label": "on_mixMaxButton_clicked()",
+      "file_type": "code",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L246"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_on_enablecoinjoincheckbox_toggled",
+      "label": "on_enableCoinJoinCheckbox_toggled()",
+      "file_type": "code",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L259"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_on_enablestakingcheckbox_toggled",
+      "label": "on_enableStakingCheckbox_toggled()",
+      "file_type": "code",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L272"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_on_roundsspinbox_valuechanged",
+      "label": "on_roundsSpinBox_valueChanged()",
+      "file_type": "code",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L284"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_on_denominationcombobox_currentindexchanged",
+      "label": "on_denominationComboBox_currentIndexChanged()",
+      "file_type": "code",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L295"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_updatestatus",
+      "label": "updateStatus()",
+      "file_type": "code",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L300"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_updatestakinginfo",
+      "label": "updateStakingInfo()",
+      "file_type": "code",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L340"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_updateprogressbars",
+      "label": "updateProgressBars()",
+      "file_type": "code",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L402"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoinpage_updatedisplayunit",
+      "label": "updateDisplayUnit()",
+      "file_type": "code",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L429"
+    },
+    {
+      "id": "coinjoin_h",
+      "label": "coinjoin.h",
+      "file_type": "code",
+      "source_file": "coinjoin.h",
+      "source_location": "L1"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_coinjoinsession",
+      "label": "CoinJoinSession()",
+      "file_type": "code",
+      "source_file": "coinjoin.h",
+      "source_location": "L95"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_setconfig",
+      "label": "SetConfig()",
+      "file_type": "code",
+      "source_file": "coinjoin.h",
+      "source_location": "L237"
+    },
+    {
+      "id": "coinjoin_cpp",
+      "label": "coinjoin.cpp",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L1"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_ccoinjoin",
+      "label": "CCoinJoin()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L25"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_init",
+      "label": "Init()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L39"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_createsession",
+      "label": "CreateSession()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L47"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_joinsession",
+      "label": "JoinSession()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L71"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_submitsignedinput",
+      "label": "SubmitSignedInput()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L115"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_submitoutputs",
+      "label": "SubmitOutputs()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L140"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_signandbroadcast",
+      "label": "SignAndBroadcast()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L174"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_getdenominations",
+      "label": "GetDenominations()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L285"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_isvaliddenomination",
+      "label": "IsValidDenomination()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L290"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_selectcoinsfordenomination",
+      "label": "SelectCoinsForDenomination()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L300"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_createcoinjointransaction",
+      "label": "CreateCoinJoinTransaction()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L325"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_automix",
+      "label": "AutoMix()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L557"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_stopmixing",
+      "label": "StopMixing()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L676"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_getmixingprogress",
+      "label": "GetMixingProgress()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L684"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_suggestdenomination",
+      "label": "SuggestDenomination()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L716"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_getavailablebalance",
+      "label": "GetAvailableBalance()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L753"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_getoutpointrounds",
+      "label": "GetOutpointRounds()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L768"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_markmixed",
+      "label": "MarkMixed()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L776"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_getsession",
+      "label": "GetSession()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L782"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_getactivesessions",
+      "label": "GetActiveSessions()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L791"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_cancelsession",
+      "label": "CancelSession()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L805"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_cleanupexpiredsessions",
+      "label": "CleanupExpiredSessions()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L811"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_createcollateral",
+      "label": "CreateCollateral()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L831"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_hascollateral",
+      "label": "HasCollateral()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L859"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_isexpired",
+      "label": "IsExpired()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L865"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_formatdenomination",
+      "label": "FormatDenomination()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L875"
+    },
+    {
+      "id": "coinjoin_corpus_coinjoin_getstandarddenominations",
+      "label": "GetStandardDenominations()",
+      "file_type": "code",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L885"
+    }
+  ],
+  "edges": [
+    {
+      "source": "wallet_h",
+      "target": "amount",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "streams",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "tinyformat",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "ui_interface",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "utilstrencodings",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "validationinterface",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "ismine",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "crypter",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "walletdb",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "rpcwallet",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "pos",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "stealth",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "algorithm",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "atomic",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "map",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L27",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "set",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L28",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "stdexcept",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "stdint",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "string",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "utility",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "vector",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_ckeypool",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_caddressbookdata",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L116",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_readorderpos",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L141",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_writeorderpos",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L152",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_ctransaction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L167",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_cwallettx",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L234",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_txin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L286",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_init",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L291",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_markdirty",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L370",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_bindwallet",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L382",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_getchange",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L396",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_caccountingentry",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L476",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_setnull",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L674",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_cansupportfeature",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L719",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_abortrescan",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L745",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_isabortingrescan",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L746",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_isscanning",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L747",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_loadkey",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L757",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_loadminversion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L761",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_getbalance",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L807",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_resetrequestcount",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L898",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_getkeypoolsize",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L904",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_getversion",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L919",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_setbroadcasttransactions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L957",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_setcoinjoinenabled",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L991",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_setcoinjoinrounds",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L995",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_getcoinjoinprogress",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L999",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_stopcoinjoinmixing",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L1009",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_haveavailablecoinsforstaking",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L1060",
+      "weight": 1.0
+    },
+    {
+      "source": "wallet_h",
+      "target": "coinjoin_corpus_wallet_caccount",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L1120",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_wallet_ctransaction",
+      "target": "coinjoin_corpus_wallet_init",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L185",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_wallet_cwallettx",
+      "target": "coinjoin_corpus_wallet_init",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L273",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_wallet_txin",
+      "target": "coinjoin_corpus_wallet_init",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L288",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_wallet_bindwallet",
+      "target": "coinjoin_corpus_wallet_markdirty",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L385",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_wallet_caccountingentry",
+      "target": "coinjoin_corpus_wallet_setnull",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L490",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_wallet_caccountingentry",
+      "target": "coinjoin_corpus_wallet_writeorderpos",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L517",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_wallet_caccountingentry",
+      "target": "coinjoin_corpus_wallet_readorderpos",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L541",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_wallet_caccount",
+      "target": "coinjoin_corpus_wallet_setnull",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "wallet.h",
+      "source_location": "L1127",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_h",
+      "target": "amount",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.h",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_h",
+      "target": "qwidget",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.h",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_h",
+      "target": "qtimer",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.h",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_h",
+      "target": "coinjoin_corpus_coinjoinpage_ui",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.h",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_h",
+      "target": "coinjoin_corpus_coinjoinpage_coinjoinpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.h",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "coinjoinpage",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "ui_coinjoinpage",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "walletmodel",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "clientmodel",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "guiutil",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "bitcoinunits",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "optionsmodel",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "coinjoin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "wallet",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "chainparams",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "util",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "qmessagebox",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "qsettings",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "coinjoin_corpus_coinjoinpage_coinjoinpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "coinjoin_corpus_coinjoinpage_setwalletmodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L55",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "coinjoin_corpus_coinjoinpage_coinjoinpage",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L83",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "coinjoin_corpus_coinjoinpage_setclientmodel",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L88",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "coinjoin_corpus_coinjoinpage_setbalance",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L93",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "coinjoin_corpus_coinjoinpage_on_startmixbutton_clicked",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L132",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "coinjoin_corpus_coinjoinpage_on_stopmixbutton_clicked",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L236",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "coinjoin_corpus_coinjoinpage_on_mixmaxbutton_clicked",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L246",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "coinjoin_corpus_coinjoinpage_on_enablecoinjoincheckbox_toggled",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L259",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "coinjoin_corpus_coinjoinpage_on_enablestakingcheckbox_toggled",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L272",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "coinjoin_corpus_coinjoinpage_on_roundsspinbox_valuechanged",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L284",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "coinjoin_corpus_coinjoinpage_on_denominationcombobox_currentindexchanged",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L295",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "coinjoin_corpus_coinjoinpage_updatestatus",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L300",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "coinjoin_corpus_coinjoinpage_updatestakinginfo",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L340",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "coinjoin_corpus_coinjoinpage_updateprogressbars",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L402",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoinpage_cpp",
+      "target": "coinjoin_corpus_coinjoinpage_updatedisplayunit",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L429",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoinpage_coinjoinpage",
+      "target": "coinjoin_corpus_coinjoinpage_on_mixmaxbutton_clicked",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoinpage_coinjoinpage",
+      "target": "coinjoin_corpus_coinjoinpage_updatestatus",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L46",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoinpage_setwalletmodel",
+      "target": "coinjoin_corpus_coinjoinpage_setbalance",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoinpage_setwalletmodel",
+      "target": "coinjoin_corpus_coinjoinpage_updatestakinginfo",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoinpage_setbalance",
+      "target": "coinjoin_corpus_coinjoinpage_updateprogressbars",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L128",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoinpage_setbalance",
+      "target": "coinjoin_corpus_coinjoinpage_updatestakinginfo",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L129",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoinpage_on_startmixbutton_clicked",
+      "target": "coinjoin_corpus_coinjoinpage_updateprogressbars",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L232",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoinpage_on_enablestakingcheckbox_toggled",
+      "target": "coinjoin_corpus_coinjoinpage_updatestakinginfo",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L278",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoinpage_on_denominationcombobox_currentindexchanged",
+      "target": "coinjoin_corpus_coinjoinpage_updateprogressbars",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L297",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoinpage_updatestatus",
+      "target": "coinjoin_corpus_coinjoinpage_updateprogressbars",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L336",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoinpage_updatestatus",
+      "target": "coinjoin_corpus_coinjoinpage_updatestakinginfo",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L337",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoinpage_updatedisplayunit",
+      "target": "coinjoin_corpus_coinjoinpage_setbalance",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L432",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_h",
+      "target": "amount",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.h",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_h",
+      "target": "transaction",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.h",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_h",
+      "target": "pubkey",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.h",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_h",
+      "target": "sync",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.h",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_h",
+      "target": "utilstrencodings",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.h",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_h",
+      "target": "utiltime",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.h",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_h",
+      "target": "map",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.h",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_h",
+      "target": "set",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.h",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_h",
+      "target": "string",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.h",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_h",
+      "target": "vector",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.h",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_h",
+      "target": "atomic",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.h",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_h",
+      "target": "coinjoin_corpus_coinjoin_coinjoinsession",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.h",
+      "source_location": "L95",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_h",
+      "target": "coinjoin_corpus_coinjoin_setconfig",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.h",
+      "source_location": "L237",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "base58",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "consensus",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "core_io",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "key",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L9",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "main",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "net",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "random",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "sign",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "timedata",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "txmempool",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "util",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "utilmoneystr",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "validationinterface",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "wallet",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "thread",
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_ccoinjoin",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L25",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_init",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L39",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_createsession",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_joinsession",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L71",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_submitsignedinput",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L115",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_submitoutputs",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L140",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_signandbroadcast",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L174",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_getdenominations",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L285",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_isvaliddenomination",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L290",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_selectcoinsfordenomination",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L300",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_createcoinjointransaction",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L325",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_automix",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L557",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_stopmixing",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L676",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_getmixingprogress",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L684",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_suggestdenomination",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L716",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_getavailablebalance",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L753",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_getoutpointrounds",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L768",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_markmixed",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L776",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_getsession",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L782",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_getactivesessions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L791",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_cancelsession",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L805",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_cleanupexpiredsessions",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L811",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_createcollateral",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L831",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_hascollateral",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L859",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_isexpired",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L865",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_formatdenomination",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L875",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_cpp",
+      "target": "coinjoin_corpus_coinjoin_getstandarddenominations",
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L885",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoin_init",
+      "target": "coinjoin_corpus_coinjoin_cleanupexpiredsessions",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L43",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoin_createsession",
+      "target": "coinjoin_corpus_coinjoin_isvaliddenomination",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L51",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoin_signandbroadcast",
+      "target": "coinjoin_corpus_coinjoin_markmixed",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L267",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoin_getdenominations",
+      "target": "coinjoin_corpus_coinjoin_getstandarddenominations",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L287",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoin_isvaliddenomination",
+      "target": "coinjoin_corpus_coinjoin_getstandarddenominations",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L292",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoin_selectcoinsfordenomination",
+      "target": "coinjoin_corpus_coinjoin_getoutpointrounds",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L315",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoin_createcoinjointransaction",
+      "target": "coinjoin_corpus_coinjoin_getoutpointrounds",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L362",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoin_createcoinjointransaction",
+      "target": "coinjoin_corpus_coinjoin_markmixed",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L541",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoin_automix",
+      "target": "coinjoin_corpus_coinjoin_createcoinjointransaction",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L618",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoin_getmixingprogress",
+      "target": "coinjoin_corpus_coinjoin_getoutpointrounds",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L705",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoin_suggestdenomination",
+      "target": "coinjoin_corpus_coinjoin_getstandarddenominations",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L735",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoin_getactivesessions",
+      "target": "coinjoin_corpus_coinjoin_isexpired",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L798",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoin_cleanupexpiredsessions",
+      "target": "coinjoin_corpus_coinjoin_isexpired",
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "source_file": "coinjoin.cpp",
+      "source_location": "L817",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoinpage_updateprogressbars",
+      "target": "coinjoin_corpus_coinjoin_getstandarddenominations",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "coinjoinpage.cpp",
+      "source_location": "L407",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoin_createcoinjointransaction",
+      "target": "coinjoin_corpus_wallet_cwallettx",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "coinjoin.cpp",
+      "source_location": "L532",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoin_createcoinjointransaction",
+      "target": "coinjoin_corpus_wallet_ctransaction",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "coinjoin.cpp",
+      "source_location": "L532",
+      "weight": 1.0
+    },
+    {
+      "source": "coinjoin_corpus_coinjoin_getsession",
+      "target": "coinjoin_corpus_coinjoin_coinjoinsession",
+      "relation": "calls",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "coinjoin.cpp",
+      "source_location": "L788",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "input_tokens": 0,
+  "output_tokens": 0
+}
