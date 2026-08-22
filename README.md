@@ -1,169 +1,170 @@
 # Kotia Cash (KOT)
 
-**Kotia Cash** è una blockchain ibrida **PoW (scrypt) + PoS** con portafoglio
-Qt integrato e **mixing CoinJoin client-side** per la privacy delle
-transazioni.
+**Kotia Cash** is a hybrid **PoW (scrypt) + PoS** blockchain with an
+integrated Qt wallet and **client-side CoinJoin mixing** for transaction
+privacy.
 
-Basata sul codice Bitcoin Core 0.13.2/0.14 (lineage Novacoin/PPC per la
-parte Proof-of-Stake), con encoding **cashaddr**, indirizzi **stealth** e un
-motore CoinJoin nativo nel wallet.
+Based on Bitcoin Core 0.13.2/0.14 code (Novacoin/PPC lineage for the
+Proof-of-Stake part), with **cashaddr** encoding, **stealth addresses** and
+a native CoinJoin engine built into the wallet.
 
 ---
 
-## Cos'è e cosa fa
+## What it is and what it does
 
-| Funzione | Descrizione |
+| Feature | Details |
 |---|---|
-| **Consenso** | PoW scrypt fino al blocco 1.000.000, poi Proof-of-Stake puro |
-| **Ricompense** | PoW: 100 KOT/blocco (blocco 1: 100.000 KOT) · PoS: 20 KOT/stake |
-| **Tempo blocco** | 2 minuti (retarget ogni 10 min) |
-| **Maturità** | coinbase: 20 blocchi · stake: min 12 ore |
-| **Porte** | P2P `46174` · RPC `46173` (testnet `56174`/`56173`) |
-| **Indirizzi** | cashaddr `kotia:…` (prefisso nativo) + base58 legacy (46/45) |
-| **WIF** | prefisso 173 · xprv/xpub BIP32 standard |
+| **Consensus** | PoW scrypt up to block 1,000,000, then pure Proof-of-Stake |
+| **Rewards** | PoW: 100 KOT/block (block 1: 100,000 KOT) · PoS: 20 KOT/stake |
+| **Block time** | 2 minutes (retarget every 10 min) |
+| **Maturity** | coinbase: 20 blocks · stake: min 12 hours |
+| **Ports** | P2P `46174` · RPC `46173` (testnet `56174`/`56173`) |
+| **Addresses** | cashaddr `kotia:…` (native prefix) + legacy base58 (46/45) |
+| **WIF** | prefix 173 · standard BIP32 xprv/xpub |
 | **Genesis** | `000008e4586479cd9dc5832b262414a60f152381e371cf7940ffe9f5aa4b80a0` |
-| **Seed DNS** | `node1.kotia.cash`, `node2.kotia.cash`, `secondnode.kotia.cash` |
+| **DNS seeds** | `node1.kotia.cash`, `node2.kotia.cash`, `secondnode.kotia.cash` |
 
 ### Privacy: CoinJoin
 
-Il wallet include un motore di mixing **client-side** (ispirato a Dash
-PrivateSend / Wasabi): spezza gli importi in output di taglia **random**
-(la "denominazione" è il tetto massimo, non l'importo fisso) rompendo
-l'euristica "stesso importo = stesso proprietario" usata dall'analisi di
-catena.
+The wallet ships a **client-side** mixing engine (inspired by Dash
+PrivateSend / Wasabi): it splits amounts into **randomly-sized** outputs
+(the "denomination" is a cap, not a fixed amount), breaking the
+"same amount = same owner" heuristic used by chain analysis.
 
-- Denominazioni: 0.001 · 0.01 · 0.1 · 1 · 10 KOT
-- Round di remix configurabili (default 4) — ogni round eredita i round
-  degli input
-- Tracciamento "rounds" per outpoint, statistiche di mixing, limiti
-  mempool-chain con attesa conferme automatica
-- Nessun coordinator necessario: la transazione è costruita, firmata e
-  trasmessa dal wallet
+- Denominations: 0.001 · 0.01 · 0.1 · 1 · 10 KOT
+- Configurable remix rounds (default 4) — each round inherits the rounds
+  of its inputs
+- Per-outpoint rounds tracking, mixing statistics, mempool-chain limits
+  with automatic confirmation waiting
+- No coordinator required: the transaction is built, signed and
+  broadcast entirely by the wallet
 
-**Interfaccia Qt**: pagina CoinJoin dedicata (importo, max-tx, round,
-progresso per denominazione, stato live, arresto). **RPC**: `coinjoininfo`,
-`coinjoinmix <denom> [rounds] [amount]`, `setcoinjoinenabled`.
+**Qt interface**: dedicated CoinJoin page (amount, max-tx cap, rounds,
+per-denomination progress, live status, stop button). **RPC**:
+`coinjoininfo`, `coinjoinmix <denom> [rounds] [amount]`,
+`setcoinjoinenabled`.
 
-### Altre funzionalità del wallet
+### Other wallet features
 
-- **Stealth addresses** (prefisso `sm…`): indirizzi one-time non riutilizzabili
-- **Staking** integrato (checkbox + peso/expected time nella GUI)
-- BIP32 (HD), multisig, coin control, firma/verifica messaggi
-- seed DNS + checkpoint per la sincronizzazione
+- **Stealth addresses** (`sm…` prefix): one-time non-reusable addresses
+- Integrated **staking** (checkbox + weight/expected time in the GUI)
+- BIP32 (HD), multisig, coin control, message sign/verify
+- DNS seeds + checkpoints for fast synchronization
 
 ---
 
-## Binari precompilati (cartella `releases/`)
+## Prebuilt binaries (`releases/` folder)
 
-Tutti i binari in `releases/` includono le correzioni dell'audit
-agosto 2026 (vedi [CHANGELOG](#changelog-tecnico) sotto).
+All binaries in `releases/` are built from this source tree and include
+the August 2026 audit fixes (see the [changelog](#technical-changelog)
+below).
 
-| File | Sistema | Contenuto |
+| File | System | Contents |
 |---|---|---|
 | `releases/windows/kotia-windows-coinjoin.zip` | Windows x64 | `kotia-qt.exe`, `kotiad.exe`, `kotia-cli.exe`, `kotia-tx.exe` |
-| `releases/linux/kotia-linux-portable.tar.gz` | Linux x64 | portatile: binari + librerie Qt/boost incluse |
-| `releases/macos/kotia-wallet-macos-x86_64.tar.gz` | macOS 10.12+ (x86_64) | `kotia-qt` (statico, dipendenze incluse) |
+| `releases/linux/kotia-linux-portable.tar.gz` | Linux x64 | portable: binaries + bundled Qt/boost libraries |
+| `releases/macos/kotia-wallet-macos-x86_64.tar.gz` | macOS 10.12+ (x86_64) | `kotia-qt` (static, dependencies bundled) |
 
-Avvio veloce (Linux): `tar xf kotia-linux-portable.tar.gz && ./kotia-qt.sh`
-<br>macOS: scompatta ed esegui `kotia-qt` (al primo avvio conferma con
-tasto destro → Apri).
+Quick start (Linux): `tar xf kotia-linux-portable.tar.gz && ./kotia-qt.sh`
+<br>macOS: unpack and run `kotia-qt` (on first launch confirm via
+right-click → Open).
 
-Per compilare da sorgente vedi [Compilazione](#compilazione).
+To build from source see [Building](#building).
 
 ---
 
-## Compilazione
+## Building
 
 ```bash
 ./autogen.sh
-./configure            # opzioni sotto
+./configure            # options below
 make -j$(nproc)
 ```
 
-Opzioni utili: `--with-gui=qt5` (default) · `--without-gui` (solo nodo) ·
-`--disable-tests` · `--with-incompatible-bdb` (BDW 5.3+) · `--disable-bench`
+Useful options: `--with-gui=qt5` (default) · `--without-gui` (node only) ·
+`--disable-tests` · `--with-incompatible-bdb` (BDB 5.3+) · `--disable-bench`
 
-Cross-compile con il sistema `depends/`:
+Cross-compiling with the `depends/` system:
 
 ```bash
-cd depends && make HOST=x86_64-w64-mingw32 NO_QT=1   # solo daemon Windows
+cd depends && make HOST=x86_64-w64-mingw32 NO_QT=1   # Windows daemon only
 cd .. && CONFIG_SITE=$PWD/depends/x86_64-w64-mingw32/share/config.site \
        ./configure --prefix=/ && make -j$(nproc)
 ```
 
-Dipendenze (native): g++ ≥5, Qt5, Boost, OpenSSL, libevent, Berkeley DB 5.3
-(`libdb5.3++-dev`), miniupnpc (opzionale).
+Native dependencies: g++ ≥5, Qt5, Boost, OpenSSL, libevent, Berkeley DB 5.3
+(`libdb5.3++-dev`), miniupnpc (optional).
 
-### Test
+### Tests
 
 ```bash
 make -C src -j$(nproc) test/test_bitcoin
-./src/test/test_bitcoin --run_test=coinjoin_tests   # suite CoinJoin
-./src/test/test_bitcoin                             # modulo completo
+./src/test/test_bitcoin --run_test=coinjoin_tests   # CoinJoin suite
+./src/test/test_bitcoin                             # full module
 ```
 
 ---
 
-## RPC CoinJoin — esempi
+## CoinJoin RPC — examples
 
 ```bash
-# stato e progresso
+# status and progress
 kotia-cli coinjoininfo
 
-# mix di 10 KOT con transazioni fino a 1 KOT, 4 round
+# mix 10 KOT with transactions capped at 1 KOT, 4 rounds
 kotia-cli coinjoinmix 1 4 10
 
-# abilita il mixing automatico (persistito nel wallet)
+# enable automatic mixing (persisted in the wallet)
 kotia-cli setcoinjoinenabled true
 ```
 
 ---
 
-## Struttura del repository
+## Repository layout
 
 ```
-src/coinjoin.{h,cpp}        motore CoinJoin (sessioni, AutoMix, splitter)
-src/qt/coinjoinpage.*       pagina CoinJoin della GUI
-src/qt/coinjoinworker.*     worker thread per il mixing (UI non-blocking)
-src/wallet/, src/           wallet + nodo (Bitcoin Core 0.13/0.14 lineage)
-src/test/coinjoin_tests.cpp suite di test CoinJoin (unit + e2e su regtest)
-contrib/fix_bloom_testdata.py  rigeneratore vettori di test per chain fork
-doc/coinjoin-audit-2026-08-22.md  audit completo del wallet CoinJoin
-releases/                   binari precompilati per Windows/Linux/macOS
+src/coinjoin.{h,cpp}        CoinJoin engine (sessions, AutoMix, splitter)
+src/qt/coinjoinpage.*       CoinJoin GUI page
+src/qt/coinjoinworker.*     background mixing worker (non-blocking UI)
+src/wallet/, src/           wallet + node (Bitcoin Core 0.13/0.14 lineage)
+src/test/coinjoin_tests.cpp CoinJoin test suite (unit + e2e on regtest)
+contrib/fix_bloom_testdata.py  test-vector regeneration tool for forked chains
+doc/coinjoin-audit-2026-08-22.md  full CoinJoin wallet audit report
+releases/                   prebuilt binaries for Windows/Linux/macOS
 ```
 
-## Changelog tecnico
+## Technical changelog
 
-### v2.4 (2026-08-22) — audit CoinJoin
-- **Fix deadlock RPC**: `coinjoinmix` non tiene più `cs_main`/`cs_wallet`
-  durante tutto il mixing (il nodo si bloccava per la durata dell'operazione)
-- **Fix data race**: status/flag/statistiche ora atomici e protetti da lock
-  (thread GUI/RPC/worker)
-- **Fix lock-order inversion** in firma/broadcast e selezione monete
-- **Fix output dust**: minimo output di mixing alzato sopra la soglia dust
-  della chain (minRelayTxFee = 10000 sat/kB)
-- **Fix fee**: stima 200 B/input + 10% (elimina i rifiuti "insufficient
-  priority" per tx >1KB)
-- **Splitter**: `SplitAmountsForMixing()` puro e testato — l'ultimo output
-  non può più superare il tetto della denominazione
-- Fix underflow `chunkIndex` nel retry mempool-chain; guardie anti
-  divisione-per-zero e importi negativi; guardia di re-entrancy in AutoMix
-- Il parametro `amount` di `coinjoinmix` ora è onorato; round validati 1–100
-- Impostazioni CoinJoin persistite e ricaricate dal wallet DB
-- Keypool dei wallet in-memory non apre più BerkeleyDB
-- Qt: rimosso timer di stato morto nel worker
-- **Nuova suite di test** `coinjoin_tests` (9 casi: unit + e2e completa su
-  regtest con vero wallet) e riparazione dell'infrastruttura test della
-  chain (PoW scrypt nel fixture, vettori rigenerati per i formati della
-  chain) — vedi `doc/coinjoin-audit-2026-08-22.md`
+### v2.4 (2026-08-22) — CoinJoin audit
+- **RPC deadlock fix**: `coinjoinmix` no longer holds `cs_main`/`cs_wallet`
+  for the whole mix (the node used to freeze for the duration of the run)
+- **Data race fix**: status/flag/stats are now atomic and lock-guarded
+  (GUI/RPC/worker thread safety)
+- **Lock-order inversion fixed** in sign/broadcast and coin selection
+- **Dust output fix**: minimum mixed output raised above the chain's dust
+  threshold (minRelayTxFee = 10000 sat/kB)
+- **Fee fix**: 200 B/input + 10% estimate (eliminates "insufficient
+  priority" rejections for >1KB mixing transactions)
+- **Splitter**: `SplitAmountsForMixing()` — pure and unit-tested; the last
+  output can no longer exceed the denomination cap
+- Fixed `chunkIndex` underflow on the mempool-chain retry; guards against
+  division-by-zero and negative amounts; AutoMix re-entrancy guard
+- The `amount` parameter of `coinjoinmix` is now honored; rounds validated 1–100
+- CoinJoin settings persisted to and reloaded from the wallet DB
+- In-memory wallet keypool no longer attempts to open BerkeleyDB
+- Qt: removed dead status timer in the worker
+- **New test suite** `coinjoin_tests` (9 cases: unit + full e2e on regtest
+  with a real wallet) and repair of the chain's test infrastructure (scrypt
+  PoW in the fixture, vectors regenerated for the chain formats) — see
+  `doc/coinjoin-audit-2026-08-22.md`
 
-### Storico (dal fork originale)
-- v2.13.2.x: fix fake-stake, dust mempool, BDB 6.2.38, OpenSSL 1.0.2u
-- v2.13.2.1: base Bitcoin Core 0.13.2 + backport 0.14.x
-- v2.3: motore CoinJoin (sessioni, AutoMix multi-round, worker async)
-- v2.2: fee-calc fix del mixing
+### History (from the original fork)
+- v2.13.2.x: fake-stake fix, mempool dust mitigation, BDB 6.2.38, OpenSSL 1.0.2u
+- v2.13.2.1: Bitcoin Core 0.13.2 base + 0.14.x backports
+- v2.3: CoinJoin engine (sessions, multi-round AutoMix, async worker)
+- v2.2: mixing fee-calc fix
 
-## Licenza
+## License
 
-MIT — vedi `COPYING`. Il codice deriva da Bitcoin Core (MIT), con
-componenti Novacoin/PPC (MIT) per il Proof-of-Stake.
+MIT — see `COPYING`. Derived from Bitcoin Core (MIT), with Novacoin/PPC
+components (MIT) for the Proof-of-Stake part.
