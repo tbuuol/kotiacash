@@ -63,9 +63,17 @@ below).
 |---|---|---|
 | `releases/windows/kotia-windows-coinjoin.zip` | Windows x64 | `kotia-qt.exe`, `kotiad.exe`, `kotia-cli.exe`, `kotia-tx.exe` |
 | `releases/linux/kotia-linux-portable.tar.gz` | Linux x64 | portable: binaries + bundled Qt/boost libraries |
+| `releases/linux/kotia-wallet-coinjoin-v24.AppImage` | Linux x64 | single-file AppImage: `chmod +x` and run |
+| `releases/linux/kotia-qt-linux-v24.tar.gz` | Linux x64 | `kotia-qt`, `kotia-cli`, `kotia-tx` (system Qt) |
+| `releases/linux/kotia-daemon-linux-v24.tar.gz` | Linux x64 | headless node: `kotiad` only |
 | `releases/macos/kotia-wallet-macos-x86_64.tar.gz` | macOS 10.12+ (x86_64) | `kotia-qt` (static, dependencies bundled) |
+| `releases/macos/kotia-wallet-macos-arm64.tar.gz` | macOS 11+ (Apple Silicon M1/M2/M3/M4) | `kotia-qt` (static, dependencies bundled) |
+
+SHA256 checksums for every package are listed in
+[`releases/README.md`](releases/README.md).
 
 Quick start (Linux): `tar xf kotia-linux-portable.tar.gz && ./kotia-qt.sh`
+<br>or AppImage: `chmod +x kotia-wallet-coinjoin-v24.AppImage && ./kotia-wallet-coinjoin-v24.AppImage`
 <br>macOS: unpack and run `kotia-qt` (on first launch confirm via
 right-click → Open).
 
