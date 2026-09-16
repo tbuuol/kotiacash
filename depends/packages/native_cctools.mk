@@ -1,10 +1,9 @@
 package=native_cctools
-$(package)_version=4da2f3b485bcf4cef526f30c0b8c0bcda99cdbb4
+$(package)_version=e79d784d667816e4b15a0abd78828f9abb0a0b99
 $(package)_download_path=https://github.com/tpoechtrager/cctools-port/archive
 $(package)_file_name=$($(package)_version).tar.gz
-$(package)_sha256_hash=a2d491c0981cef72fee2b833598f20f42a6c44a7614a61c439bda93d56446fec
+$(package)_sha256_hash=b671248580a21431cd890cb9e57a973d54a60132a257ef3a7c0c925d4052e066
 $(package)_build_subdir=cctools
-$(package)_patches=ld64_disable_threading.patch
 
 ifeq ($(strip $(FORCE_USE_SYSTEM_CLANG)),)
 $(package)_clang_version=8.0.0
@@ -14,11 +13,11 @@ $(package)_clang_file_name=clang-llvm-$($(package)_clang_version)-x86_64-linux-g
 $(package)_clang_sha256_hash=87b88d620284d1f0573923e6f7cc89edccf11d19ebaec1cfb83b4f09ac5db09c
 endif
 
-$(package)_libtapi_version=3efb201881e7a76a21e0554906cf306432539cef
+$(package)_libtapi_version=664b8414f89612f2dfd35a9b679c345aa5389026
 $(package)_libtapi_download_path=https://github.com/tpoechtrager/apple-libtapi/archive
 $(package)_libtapi_download_file=$($(package)_libtapi_version).tar.gz
 $(package)_libtapi_file_name=$($(package)_libtapi_version).tar.gz
-$(package)_libtapi_sha256_hash=380c1ca37cfa04a8699d0887a8d3ee1ad27f3d08baba78887c73b09485c0fbd3
+$(package)_libtapi_sha256_hash=62e419c12d1c9fad67cc1cd523132bc00db050998337c734c15bc8d73cc02b61
 
 $(package)_extra_sources=$($(package)_libtapi_file_name)
 ifeq ($(strip $(FORCE_USE_SYSTEM_CLANG)),)
@@ -81,9 +80,10 @@ define $(package)_preprocess_cmds
   sed -i.old 's|cmake_policy(SET CMP0051 OLD)|cmake_policy(SET CMP0051 NEW)|' libtapi/src/llvm/CMakeLists.txt && \
   sed -i.old 's|#include <memory>|#include <stdint.h>\n#include <memory>|' libtapi/src/llvm/projects/libtapi/include/tapi/LinkerInterfaceFile.h && \
   sed -i.old 's|#include <tapi/Defines.h>|#include <stdint.h>\n#include <tapi/Defines.h>|' libtapi/src/llvm/projects/libtapi/include/tapi/PackedVersion32.h && \
+  sed -i.old 's|#include "endian.h"|#include "endian.h"\n#include <stdlib.h>\n#include <string.h>|' cctools/ld64/src/ld/code-sign-blobs/blob.h && \
+  sed -i.old 's|\tvoid length(size_t size)\t\t\t{ mLength = size; }|\tvoid length(size_t size)\t\t\t{ mLength = size; }\n\n\tBlobCore *clone() const\n\t{ size_t sz = this->length(); BlobCore *c = (BlobCore *)malloc(sz); if (c) memcpy(c, this, sz); return c; }|' cctools/ld64/src/ld/code-sign-blobs/blob.h && \
   CC=$($(package)_cc) CXX=$($(package)_cxx) INSTALLPREFIX=$($(package)_extract_dir) ./libtapi/build.sh && \
-  CC=$($(package)_cc) CXX=$($(package)_cxx) INSTALLPREFIX=$($(package)_extract_dir) ./libtapi/install.sh && \
-  patch -p1 < $($(package)_patch_dir)/ld64_disable_threading.patch
+  CC=$($(package)_cc) CXX=$($(package)_cxx) INSTALLPREFIX=$($(package)_extract_dir) ./libtapi/install.sh
 endef
 
 define $(package)_config_cmds
@@ -99,7 +99,7 @@ define $(package)_stage_cmds
   $(MAKE) DESTDIR=$($(package)_staging_dir) install && \
   mkdir -p $($(package)_staging_prefix_dir)/lib/ && \
   cd $($(package)_extract_dir) && \
-  cp lib/libtapi.so.6 $($(package)_staging_prefix_dir)/lib/ && \
+  cp -P lib/libtapi.so* $($(package)_staging_prefix_dir)/lib/ && \
   cd $($(package)_extract_dir)/toolchain && \
   mkdir -p $($(package)_staging_prefix_dir)/lib/clang/$($(package)_clang_version)/include && \
   mkdir -p $($(package)_staging_prefix_dir)/bin $($(package)_staging_prefix_dir)/include && \
@@ -114,6 +114,6 @@ define $(package)_stage_cmds
   $(MAKE) DESTDIR=$($(package)_staging_dir) install && \
   mkdir -p $($(package)_staging_prefix_dir)/lib/ && \
   cd $($(package)_extract_dir) && \
-  cp lib/libtapi.so.6 $($(package)_staging_prefix_dir)/lib/
+  cp -P lib/libtapi.so* $($(package)_staging_prefix_dir)/lib/
 endef
 endif

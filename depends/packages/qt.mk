@@ -99,6 +99,7 @@ $(package)_config_opts_darwin += -device-option MAC_SDK_VERSION=$(OSX_SDK_VERSIO
 $(package)_config_opts_darwin += -device-option CROSS_COMPILE="$(host)-"
 $(package)_config_opts_darwin += -device-option MAC_MIN_VERSION=$(OSX_MIN_VERSION)
 $(package)_config_opts_darwin += -device-option MAC_TARGET=$(host)
+$(package)_config_opts_darwin += -device-option MAC_ARCH=$(if $(findstring aarch64,$(host)),arm64,x86_64)
 endif
 
 $(package)_config_opts_linux  = -qt-xkbcommon-x11
@@ -146,6 +147,7 @@ define $(package)_extract_cmds
 endef
 
 define $(package)_preprocess_cmds
+  sed -i.old "s, || defined(TARGET_OS_MAC),," qtbase/src/3rdparty/libpng/pngpriv.h && \
   patch -p1 -i $($(package)_patch_dir)/freetype_back_compat.patch && \
   sed -i.old "s|updateqm.commands = \$$$$\$$$$LRELEASE|updateqm.commands = $($(package)_extract_dir)/qttools/bin/lrelease|" qttranslations/translations/translations.pro && \
   patch -p1 -i $($(package)_patch_dir)/drop_lrelease_dependency.patch && \

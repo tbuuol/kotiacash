@@ -15,11 +15,13 @@ ifneq ($(build_os),darwin)
 $(package)_config_opts_darwin=--disable-atomicsupport
 endif
 $(package)_config_opts_aarch64=--disable-atomicsupport
+$(package)_config_opts_aarch64_darwin=--disable-atomicsupport --with-mutex=POSIX/pthreads
 $(package)_cxxflags=-std=c++11
 $(package)_cppflags_mingw32=-DUNICODE -D_UNICODE
 endef
 
 define $(package)_preprocess_cmds
+  cp -f $(BASEDIR)/config.sub $(BASEDIR)/config.guess dist/ && \
   sed -i.old 's/WinIoCtl.h/winioctl.h/g' src/dbinc/win_db.h && \
   sed -i.old 's/atomic_init/atomic_init_db/' src/dbinc/atomic.h src/mp/mp_region.c src/mp/mp_mvcc.c src/mp/mp_fget.c src/mutex/mut_method.c src/mutex/mut_tas.c
 endef

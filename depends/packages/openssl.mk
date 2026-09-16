@@ -35,6 +35,7 @@ $(package)_config_opts+=no-weak-ssl-ciphers
 $(package)_config_opts+=no-zlib
 $(package)_config_opts+=no-zlib-dynamic
 $(package)_config_opts+=$($(package)_cflags) $($(package)_cppflags)
+$(package)_patches=darwin64-arm64-cc.patch
 $(package)_config_opts_linux=-fPIC -Wa,--noexecstack
 $(package)_config_opts_x86_64_linux=linux-x86_64
 $(package)_config_opts_i686_linux=linux-generic32
@@ -47,11 +48,13 @@ $(package)_config_opts_powerpc_linux=linux-generic32
 $(package)_config_opts_riscv32_linux=linux-generic32
 $(package)_config_opts_riscv64_linux=linux-generic64
 $(package)_config_opts_x86_64_darwin=darwin64-x86_64-cc
+$(package)_config_opts_aarch64_darwin=darwin64-arm64-cc
 $(package)_config_opts_x86_64_mingw32=mingw64
 $(package)_config_opts_i686_mingw32=mingw
 endef
 
 define $(package)_preprocess_cmds
+  patch -p1 < $($(package)_patch_dir)/darwin64-arm64-cc.patch && \
   sed -i.old "/define DATE/d" util/mkbuildinf.pl && \
   sed -i.old "s|engines apps test|engines|" Makefile.org
 endef

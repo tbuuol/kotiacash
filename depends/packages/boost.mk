@@ -29,6 +29,9 @@ endef
 
 define $(package)_preprocess_cmds
   patch -p1 < $($(package)_patch_dir)/unused_var_in_process.patch && \
+  sed -i.old 's|integral_c<int_float_mixture_enum,|integral_c<int,|' boost/numeric/conversion/detail/int_float_mixture.hpp && \
+  sed -i.old 's|integral_c<udt_builtin_mixture_enum,|integral_c<int,|' boost/numeric/conversion/detail/udt_builtin_mixture.hpp && \
+  sed -i.old 's|integral_c<sign_mixture_enum,|integral_c<int,|' boost/numeric/conversion/detail/sign_mixture.hpp && \
   echo "using $($(package)_toolset_$(host_os)) : : $($(package)_cxx) : <cxxflags>\"$($(package)_cxxflags) $($(package)_cppflags)\" <linkflags>\"$($(package)_ldflags)\" <archiver>\"$($(package)_archiver_$(host_os))\" <striper>\"$(host_STRIP)\"  <ranlib>\"$(host_RANLIB)\" <rc>\"$(host_WINDRES)\" : ;" > user-config.jam
 endef
 

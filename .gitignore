@@ -93,6 +93,9 @@ depends/hosts/*.host.bak
 moc_*.cpp
 qrc_*.cpp
 ui_*.h
+!src/ui_interface.h
+!src/qt/ui_coinjoinpage.h
+!src/qt/ui_stealthaddressdialog.h
 src/qt/moc_*.cpp
 src/qt/qrc_*.cpp
 src/qt/forms/ui_*.h
@@ -116,9 +119,8 @@ src/univalue/univalue-config.h
 src/leveldb/*.a
 src/leveldb/out/
 src/leveldb/build/
-
-# LevelDB / crc32c outputs
-leveldb/
+src/leveldb/build_config.mk
+!src/leveldb/Makefile
 
 # Test / QA generated
 qa/pull-tester/run-bitcoind-for-test.sh
@@ -136,3 +138,6 @@ cache/
 *.patch.orig
 *.patch.rej
 src/config/bitcoin-config.h.in~
+
+# Build stamps
+*.dirstamp
