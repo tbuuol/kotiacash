@@ -162,9 +162,9 @@ public:
         assert(consensus.hashGenesisBlock == uint256S("0x000008e4586479cd9dc5832b262414a60f152381e371cf7940ffe9f5aa4b80a0"));
         assert(genesis.hashMerkleRoot == uint256S("0xf0701c31be26a51c1c8d1bc857c4b49a5d54349ad912b42102ca2c0a164d1513"));
 
-        vSeeds.push_back(CDNSSeedData("kotia.cash", "node1.kotia.cash"));
-        vSeeds.push_back(CDNSSeedData("kotia.cash", "node2.kotia.cash"));
-        vSeeds.push_back(CDNSSeedData("n2.kotia.cash", "secondnode.kotia.cash"));
+        // kotia.cash expired in November 2026 and its nodes went offline; these are the nodes that keep the chain going
+        vSeeds.push_back(CDNSSeedData("liteworlds.quest", "liteworlds.quest"));
+        vSeeds.push_back(CDNSSeedData("contaboserver.net", "vmi3677616.contaboserver.net"));
 
         base58Prefixes[PUBKEY_ADDRESS] = std::vector<unsigned char>(1,46);
         base58Prefixes[SCRIPT_ADDRESS] = std::vector<unsigned char>(1,45);
