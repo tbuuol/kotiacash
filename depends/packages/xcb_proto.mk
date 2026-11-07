@@ -9,6 +9,11 @@ define $(package)_set_vars
   $(package)_config_opts_linux=--with-pic
 endef
 
+# py-compile uses the imp module, which Python 3.12 removed; the .pyc files are deleted afterwards anyway
+define $(package)_preprocess_cmds
+  printf '#!/bin/sh\nexit 0\n' > py-compile
+endef
+
 define $(package)_config_cmds
   $($(package)_autoconf)
 endef
